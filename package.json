@@ -15,5 +15,9 @@
     "url": "https://github.com/pokupaj/learning/issues"
   },
   "homepage": "https://github.com/pokupaj/learning#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/node": "^13.13.5",
+    "node": "^14.2.0"
+  }
 }
