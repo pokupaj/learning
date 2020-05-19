@@ -4,7 +4,7 @@ let str = readlineSync.question("Введите строку\n >");
 let words = str.split(" ");
 
 function longestString(arr) {
-    let longestStr = ''
+    let longestStr = "";
     arr.forEach(element => {
         if (element.length > longestStr.length) {
           longestStr = element;
@@ -13,4 +13,4 @@ function longestString(arr) {
     return longestStr;
   }
 
-  console.log(longestString(words));
+console.log(longestString(words));

@@ -1,36 +1,11 @@
 const readlineSync = require("readline-sync");
 
 let str = readlineSync.question("Введите строку, чтобы сделать каждое слово с большой буквы\n >");
-let word = "";
-let words = [];
-let upperChar = "";
-
-for (let i = 0; i < str.length; ++i) {
-    let char = str[i];
-    if (char != " ") {
-        word += char;
-    }
-    if ((word.length > 0) && ((i === str.length - 1) || char === " ")) {
-        words.push(word);
-        word = "";
-    }
-};
+let words = str.split(" ");
+let wordsUpper = [];
 
 for (slovo of words) {
-    upperChar = slovo[0].replace(slovo[0], slovo[0].toUpperCase());
-    slovo[0] = slovo[0].replace(slovo[0], upperChar);
-    console.log(upperChar);
+    wordsUpper.push(slovo[0].toUpperCase() + slovo.slice(1));
 };
 
-console.log(words.join(" "));
-
-
-/*
-Задание 8.8
-
-Дана строка, сделайте букву каждого слова прописной (большой).
-
-str?
-> One two and three
-One Two And Three
-*/
+console.log(wordsUpper.join(" "));

@@ -50,4 +50,3 @@ for (let i=0; i<leftSideOfEq.length-1; ++i) {
 }
 
 console.log(Boolean(bufferResult === rightSideOfEq));
-
